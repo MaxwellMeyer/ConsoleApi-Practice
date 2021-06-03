@@ -1,12 +1,26 @@
 ﻿using System;
+using System.Threading.Tasks;
+using RestSharp;
 
-namespace ConsoleApiCall
+namespace ApiTest
 {
-    class Program
+  class Program
+  {
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+      var apiCallTask = ApiHelper.ApiCall(("..."));
+      var result = apiCallTask.Result;
+      Console.WriteLine(result);
     }
+  }
+  class ApiHelper
+  {
+    public static async Task<string> ApiCall(string apikey)
+    {
+      RestClient client = new RestClient("https://api.nytimes.com/svc/topstories/v2");
+      RestRequest request = new RestRequest($"home.json?api-key={...}", Method.GET);
+      var response = await client.ExecuteTaskAsync(request);
+      return response.Content;
+    }
+  }
 }
