@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "e/q9VvyVT5XziAyem+3yML6wk/FOmtcI97KlkyllCp7OfC5hSbnibXOW7CFj1oiJU5AGMs7Mpj4P/fFjD53GjQ==",
+  "dgSpecHash": "OfwwO+SK34qkkzaslgwGqeWwiHzpOmHaz8uck3D8iqATnBf2MOBQeNV4ppt5mbuGQFeijidCWPCRAHqyu1KSzg==",
   "success": true,
   "projectFilePath": "/Users/max.welll/Desktop/epicodus/mar/ConsoleApiCall/ConsoleApiCall.csproj",
   "expectedPackageFiles": [
+    "/Users/max.welll/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
     "/Users/max.welll/.nuget/packages/restsharp/106.6.10/restsharp.106.6.10.nupkg.sha512"
   ],
   "logs": []

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
 using RestSharp;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace ApiTest
 {
